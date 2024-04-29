@@ -116,7 +116,7 @@ After running git add, git commit and git push. Your changes will be on github r
 ![workflow](/images/workflow.png)
 Secondly, go the Actions and click on New workflow.
 ![action](/images/action.png)
-Name the workflow as **hugo.yaml** and replace the content of this file by **[this yaml file](/hugo.yaml)**. Commit changes and wait for the changes to be deployed. 
+Name the workflow as **hugo.yaml** and replace the content of this file by **[this yaml file](/hugo.yaml)**. If your Github branch name is not *main* and your Hugo version is not 0.125.3, you should change in the hugo.yaml file accordingly before committing. Commit changes and wait for the changes to be deployed. 
 
 After everything finished successfully, you will see your website through the link *[your-github-username].github.io*. 
 
