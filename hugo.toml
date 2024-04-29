@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Jiachl's Log"
+theme = 'paper'

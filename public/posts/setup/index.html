@@ -1,0 +1,331 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=43427&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Setup - My New Hugo Site</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="&#43;&#43;&#43; title = &lsquo;How to Setup Your Personal Blog Using Github Pages&rsquo; date = 2024-04-22T14:48:19&#43;08:00 draft = true math = true &#43;&#43;&#43;
+Introduction The main objective of this blog is to show you how to build a personal blog using Github Pages.
+The first thing you may ask is why using these tools instead of using some other more famous tools like WIX or simply publishing on platforms like Medium? The reason is that using Github Pages gives you more control on the content and format of your website." />
+  <meta name="author" content="My New Hugo Site" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:43427/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:43427/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:43427/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="http://localhost:43427/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://localhost:43427/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.125.3">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="http://localhost:43427/"
+      >My New Hugo Site</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Setup</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Apr 29, 2024</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>+++
+title = &lsquo;How to Setup Your Personal Blog Using Github Pages&rsquo;
+date = 2024-04-22T14:48:19+08:00
+draft = true
+math = true
++++</p>
+<h2 id="introduction">Introduction</h2>
+<p>The main objective of this blog is to show you how to build a personal blog using <strong><a href="https://docs.github.com/en/pages">Github Pages</a></strong>.</p>
+<p>The first thing you may ask is why using these tools instead of using some other more famous tools like <strong><a href="https://www.wix.com/">WIX</a></strong> or simply publishing on platforms like <strong><a href="https://medium.com/">Medium</a></strong>? The reason is that using Github Pages gives you more control on the content and format of your website. And most importantly you can use it for free! Meaning you do not need to pay any money to build and publish your website. The website you built will be hosted on GitHub&rsquo;s github.io domain or your own custom domain.</p>
+<p>As the saying there is no free lunch/dinner, we do sacrifice something for a free website. One cost is that it does take some time to learn how to build a website with these tools. Another cost is that we are only allowed to build static websites to be hosted on Github Pages. To be specific, a static website, comparing to a dynamic website, is made of fixed code. Meaning only the site developer, which will be yourself, can make changes to the website. There will be no interactions between a website visitor and the website. For example, users are not able to leave comments or click on like/dislike buttons.</p>
+<p>For the first limitation, there are some tools can help to flatten the learning curve. And <strong><a href="https://gohugo.io/">Hugo</a></strong> is one of the tools we are going to use. For the second limitation, although there is no solution to it, it still makes a lot of sense to use Github Pages host your personal resume or blog writings. So if you are interested to build a free personal website, I will show you in this blog to guide you through the process of setting up everything.</p>
+<h2 id="tools-to-be-used">Tools to be used</h2>
+<p>The main tool will be used to build the website is <strong><a href="https://gohugo.io/">Hugo</a></strong>, which is <em>one of the most popular open-source static site generators</em> according to its website. To install Hugo, just refer to the instructions on its doc page <a href="https://gohugo.io/installation/">https://gohugo.io/installation/</a>.</p>
+<p>Of course to use Github Pages you need to have a Github account. Visit <a href="https://github.com/">https://github.com/</a> and follow the steps there to sign up your account.</p>
+<p>That&rsquo;s it, now we are ready to start building our personal websites!</p>
+<h2 id="step-1-create-the-site">Step 1: Create the site</h2>
+<p>Run the following code in your terminal line by line, it will help you create your website with the name <em>[your-github-username].github.io</em>. If you do not know how to find your github username, just log into your github account and click on the avatar on the top-right corner. The name showing right besides your avatar is your github username.</p>
+<div class="highlight my-class" id="create-site"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>hugo new site <span style="color:#f92672">[</span>your-github-username<span style="color:#f92672">]</span>.github.io
+</span></span></code></pre></div><p>After creating your site, there should be a folder with the name <em>[your-github-username].github.io</em> under your current directory. Use the following command to change to that directory.</p>
+<div class="highlight my-class" id="cd-folder"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>cd <span style="color:#f92672">[</span>your-github-username<span style="color:#f92672">]</span>.github.io
+</span></span></code></pre></div><p>In the <em>[your-github-username].github.io</em> directory, run the following codes line by line. The codes help you add a theme to your website. Here I am using a theme called <a href="https://themes.gohugo.io/themes/hugo-paper/">Paper</a>. You are feel free to use any other themes. A good place to find themes is Hugo&rsquo;s <a href="https://themes.gohugo.io/">theme</a> website.</p>
+<div class="highlight my-class" id="add-theme"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>git init
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>echo <span style="color:#e6db74">&#34;theme = &#39;paper&#39;&#34;</span> &gt;&gt; hugo.toml
+</span></span></code></pre></div><p>A more in-depth explanation of the above code, the first row is to create an empty Git repository. Which includes all the necessary subdirectories and files. The second line is to add the theme as a file under the Hugo themes folder. In the example above I used the theme from <a href="https://github.com/nanxiaobei/hugo-paper">https://github.com/nanxiaobei/hugo-paper</a> and added into theme directory with name <em>paper</em>. The last line is just to use the added <em>paper</em> theme by adding it into the hugo.toml file, which is the file holding all configurations for your site.</p>
+<div class="highlight my-class" id="launch-site"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>hugo server
+</span></span></code></pre></div><p>You will see some message ending with the following on your terminal.</p>
+<pre tabindex="0"><code>Now you have your first site set up. To run it locally, you can run the following code in your terminal.
+
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+</code></pre><p>Open the http://localhost:1313/ link on your web browser and you can see your first site.</p>
+<h2 id="step-2-create-a-post">Step 2: Create a post</h2>
+<p>With the website created, it is time to add some content to it. With Hugo you can create your post using the following command.</p>
+<div class="highlight my-class" id="create-post"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>hugo new content posts/<span style="color:#f92672">[</span>name-of-your-post<span style="color:#f92672">]</span>.md
+</span></span></code></pre></div><p>The above code will create a file under the directory content/posts. Noted that the format of your post is <em>md</em>, which is <a href="https://www.markdownguide.org/getting-started/">Markdown</a> that typically be used to add formatting elements to plaintext texts. In the created [name-of-your-post].md you can edit the metadata of your post&rsquo;s content. In Hugo it has another name called <em>Front Matter</em>. The Front Matter is included between the +++ signs. The front matter I used when writing this blog is as follows:</p>
+<pre tabindex="0"><code>+++
+title = &#39;How to Setup Your Personal Blog Using Github Pages&#39;
+date = 2024-04-22T14:48:19+08:00
+draft = true
+math = true
++++
+</code></pre><p>Following the front matter, you can add the content. To format your content, you can use the Markdown <a href="https://www.markdownguide.org/cheat-sheet/">cheatsheet</a>. Some basic syntax for markdown elements are:</p>
+<ol>
+<li># H1, ## H2, ### H3 for headings</li>
+</ol>
+<ul>
+<li>
+<h1 id="h1">H1</h1>
+</li>
+<li>
+<h2 id="h2">H2</h2>
+</li>
+<li>
+<h3 id="h3">H3</h3>
+</li>
+</ul>
+<ol start="2">
+<li>**bold text** for <strong>bold text</strong>.</li>
+<li>*italicized text* for <em>italicized text</em>.</li>
+<li>[text](<a href="https://www.example.com">https://www.example.com</a>) for <a href="https://www.example.com">text</a> with hyperlink redirect to the given URL.</li>
+</ol>
+<p>Sometimes you may need to include images in your post. Firstly, save your image under the directory static/images/.
+<img src="/images/screenshot.png" alt="screenshot">
+Next, use the following syntax in your content to display the image.</p>
+<pre tabindex="0"><code>![lenna](/images/cdma.jpg)
+</code></pre><p><img src="/images/cdma.jpg" alt="lenna"></p>
+<p>Another important feature I used a lot is math typesetting. This feature allows me to use $\LaTeX{}$ syntax to write mathematical equations. To use this feature, you need to first ensure the Hugo template you used actually supports <a href="https://www.mathjax.org/">MathJax</a> or <a href="https://katex.org/">KaTeX</a>. As we are using the theme from <a href="https://github.com/nanxiaobei/hugo-paper">https://github.com/nanxiaobei/hugo-paper</a>, the theme supports KaTex and we can simply set <code>math = true</code> in the front matter. Then we can use $\LaTeX{}$ syntax to write equations conveniently. For example by adding</p>
+<pre tabindex="0"><code>$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+</code></pre><p>in the content, we can get
+$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$</p>
+<p>Now we are ready to deploy our first post on Github Pages and make it accessible to others!</p>
+<h2 id="step-3-deploy-the-site">Step 3: Deploy the site</h2>
+<p>To deploy your site, you need to first create a Github repo with the same name as your Hugo project <em>[your-github-username].github.io</em>. Refer to this <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories">link</a> if you do not know how to create your repo on Github.</p>
+<p>Next push your local repo, which is the <em>[your-github-username].github.io</em> project folder on your local, to the Github repo.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="http://localhost:43427/">My New Hugo Site</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>
