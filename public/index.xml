@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jiachl&#39;s Log</title>
-    <link>https://example.org/</link>
+    <link>https://jiachl.github.io/</link>
     <description>Recent content on Jiachl&#39;s Log</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Apr 2024 14:48:19 +0800</lastBuildDate>
+    <atom:link href="https://jiachl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Setup Your Personal Blog Using Github Pages</title>
+      <link>https://jiachl.github.io/posts/setup/</link>
+      <pubDate>Mon, 22 Apr 2024 14:48:19 +0800</pubDate>
+      <guid>https://jiachl.github.io/posts/setup/</guid>
+      <description>Introduction The main objective of this blog is to show you how to build a personal blog using Github Pages.&#xA;The first thing you may ask is why using these tools instead of using some other more famous tools like WIX or simply publishing on platforms like Medium? The reason is that using Github Pages gives you more control on the content and format of your website. And most importantly you can use it for free!</description>
+    </item>
   </channel>
 </rss>
