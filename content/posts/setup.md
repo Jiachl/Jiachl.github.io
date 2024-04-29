@@ -1,9 +1,4 @@
 +++
-title = 'Setup'
-date = 2024-04-29T10:24:24+08:00
-draft = true
-+++
-+++
 title = 'How to Setup Your Personal Blog Using Github Pages'
 date = 2024-04-22T14:48:19+08:00
 draft = true
